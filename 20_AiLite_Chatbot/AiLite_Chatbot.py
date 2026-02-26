@@ -3,8 +3,8 @@ import speech_recognition as sr
 import time
 import http.client
  
-bot_num = input("Enter bot number : ")
-host = "192.168." + bot_num + ".10"
+
+host = input("Enter brain block ip address : ")
 port = 80
  
 def send_re_httpquest(host, port, path):
