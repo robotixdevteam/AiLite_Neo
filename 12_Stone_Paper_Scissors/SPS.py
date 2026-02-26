@@ -4,10 +4,8 @@ import requests
 import http.client
 import time
 
-bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".10"
+host=input("Enter brain block ip address : ")
 print("Bot Action : Stone - Forward |Paper - Backward | Scissors - Right")
-host="192.168."+bot_num+".10"
 port = 80
 
 def send_re_httpquest(host, port, path):
@@ -16,7 +14,7 @@ def send_re_httpquest(host, port, path):
     for _ in range(retries):
         conn = None
         try:
-            conn = http.client.HTTPConnection(host, port)
+            conn = http.client.HTTPConnection(, port)
             conn.request("GET", path)
             response = conn.getresponse()
             data = response.read().decode("utf-8")
@@ -36,10 +34,10 @@ def determine_winner(player_choice, computer_choice):
     elif (player_choice == 'stone' and computer_choice == 'scissors') or \
          (player_choice == 'paper' and computer_choice == 'stone') or \
          (player_choice == 'scissors' and computer_choice == 'paper'):
-        #requests.get(f"http://{host_bot}/?cmd=f(1000)")
+        #requests.get(f"http://{host}/?cmd=f(1000)")
         return "You win!"
     else:
-        #requests.get(f"http://{host_bot}/?cmd=b(1000)")
+        #requests.get(f"http://{host}/?cmd=b(1000)")
         return "Computer wins!"
 
 def play_game(choice):
@@ -50,9 +48,9 @@ def play_game(choice):
     # Update the result_label with both the computer's choice and the result
     result_label.config(text=f"Computer's choice: {computer_choice}\n{result}")
     if computer_choice =="stone":
-       requests.get(f"http://{host_bot}/?cmd=r(1500)")
+       requests.get(f"http://{host}/?cmd=r(1500)")
     elif computer_choice =="paper":
-       requests.get(f"http://{host_bot}/?cmd=f(1000)")
+       requests.get(f"http://{host}/?cmd=f(1000)")
     elif computer_choice =="scissors":
        path=f"/?cmd=l(800)"
        send_re_httpquest(host, port, path)
