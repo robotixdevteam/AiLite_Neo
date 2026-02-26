@@ -1,8 +1,7 @@
 import time
 import http.client
-#host_bot = "192.168.20.4"
-bot_num = input("Enter bot number : ")
-host="192.168."+bot_num+".10"
+
+host=input("Enter brain block ip address : ")
 port = 80
 us_path = f"/?cmd=US"
 def send_re_httpquest(host, port, path):
