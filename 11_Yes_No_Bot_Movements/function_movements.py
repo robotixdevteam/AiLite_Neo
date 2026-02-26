@@ -1,6 +1,6 @@
 import requests
-bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".10"
+
+host_bot=input("Enter brain block ip address : ")
 def yes():
     requests.get(f"http://{host_bot}/?cmd=f(500)")
     
