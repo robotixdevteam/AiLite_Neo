@@ -1,9 +1,9 @@
 import tkinter as tk
 import random
 import requests
-bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".10"
-print(host_bot)
+
+host_bot=input("Enter brain block ip address : ")
+
 print("RULES : ")
 print("Level 1 : Win - Forward | Lose - Rotate | Tie - Left")
 print("Level 2 : Win - Forward | Lose - Backward | Tie - Left")
