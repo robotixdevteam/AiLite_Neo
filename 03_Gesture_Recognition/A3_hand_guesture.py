@@ -4,9 +4,7 @@ import time
 import math
 import requests
 
-
-bot_num = input("Enter bot number : ")
-host="192.168."+bot_num+".10"
+host=input("Enter brain block ip address : ")
 
 
 def hand_gestures():
