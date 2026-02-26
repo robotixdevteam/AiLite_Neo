@@ -5,19 +5,18 @@ import http.client
 bot_num = input("Enter bot number : ")
 speed = int(input("Enter speed Limit between (150-250) : ")) 
 print("Press and hold the 'up' arrow key to trigger the GET request. Press 'ESC' to exit.")
-host_bot="192.168."+bot_num+".10"
-host="192.168."+bot_num+".10"
+host_bot=input("Enter brain block ip address : ")
 port = 80
 us_path = f"/?cmd=US"
 
 
-def send_re_httpquest(host, port, path):
+def send_re_httpquest(host_bot, port, path):
     """Send HTTP request with retries."""
     retries = 10  # Number of retries
     for _ in range(retries):
         conn = None
         try:
-            conn = http.client.HTTPConnection(host, port)
+            conn = http.client.HTTPConnection(host_bot, port)
             conn.request("GET", path)
             response = conn.getresponse()
             data = response.read().decode("utf-8")
@@ -37,14 +36,14 @@ requests.get(f"http://{host_bot}/?cmd=right_speed={speed}")
 while True:
     # Check if the 'up' arrow key is pressed
     
-    left_1data = send_re_httpquest(host, port, us_path)
+    left_1data = send_re_httpquest(host_bot, port, us_path)
     left_data = int(left_1data)
     #print(left_data)
 
     if left_data <10 :
         #requests.get(f"http://{host_bot}/?cmd=f(200)")
         path=f"/?cmd=s"
-        send_re_httpquest(host, port, path)
+        send_re_httpquest(host_bot, port, path)
         requests.get(f"http://{host_bot}/?cmd=b(100)") 
 
     elif keyboard.is_pressed('up'):
