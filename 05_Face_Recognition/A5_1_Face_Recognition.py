@@ -53,9 +53,7 @@ except Exception as e:
 finally:
     cap.release()
     cv2.destroyAllWindows()
-
-
-bot_num = input("Enter bot number : ")    
+  
 
 def get_ultrasonic_value():
     ultrasonic_url = f"http://192.168.{bot_num}.10/?cmd=US"
@@ -72,7 +70,7 @@ if face_match:
     
     print("Press and hold the 'up' arrow key to trigger the GET request. Press 'ESC' to exit.")
     
-    host_bot="192.168."+bot_num+".10"
+    host_bot=input("Enter brain block ip address : ")
     while True:
         # Check if the 'up' arrow key is pressed
         ultrasonic_value = get_ultrasonic_value()
