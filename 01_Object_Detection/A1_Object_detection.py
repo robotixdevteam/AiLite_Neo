@@ -7,9 +7,8 @@ from ultralytics import YOLO
 #///////////////////////////////////////////////////////////////////////////////////////////////////////////#
 # delay in seconds
 intervel = 0.01
-bot_num = input("Enter bot number : ")
-host = "192.168." + bot_num + ".10"
-cam_host = "192.168." + bot_num + ".14"
+host = input("Enter brain block ip address : ")
+cam_host = input("Enter camera ip address : ")
 
 def delay(sec):
     time.sleep(sec)
