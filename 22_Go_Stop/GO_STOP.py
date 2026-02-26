@@ -1,19 +1,18 @@
 import time
 import re
 import http.client
-bot_num = input("Enter bot number: ")
-host_bot = "192.168."+bot_num+".10"
-host="192.168."+bot_num+".10"
+
+host_bot_bot = input("Enter brain block ip address : ")
 port = 80
 cs_path = f"/?cmd=cs"
 
-def send_re_httpquest(host, port, path):
+def send_re_httpquest(host_bot, port, path):
     """Send HTTP request with retries."""
     retries = 10  # Number of retries
     for _ in range(retries):
         conn = None
         try:
-            conn = http.client.HTTPConnection(host, port)
+            conn = http.client.HTTPConnection(host_bot, port)
             conn.request("GET", path)
             response = conn.getresponse()
             data = response.read().decode("utf-8")
@@ -30,16 +29,16 @@ def send_re_httpquest(host, port, path):
 outer_loop = True
 
 path = f"/?cmd=lf_speed=180"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 
 path = f"/?cmd=lb_speed=180"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 
 path = f"/?cmd=rf_speed=180"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 
 path = f"/?cmd=rb_speed=180"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 
 
 def colorfinder(value):
@@ -56,8 +55,8 @@ def colorfinder(value):
 
 while True : 
     path = f"/?cmd=s"
-    send_re_httpquest(host, port, path)
-    input_string = send_re_httpquest(host, port, cs_path)
+    send_re_httpquest(host_bot, port, path)
+    input_string = send_re_httpquest(host_bot, port, cs_path)
     match = re.search(r'C:\s*(\d+)', input_string)
     c_value = int(match.group(1))
     print(c_value)
@@ -66,19 +65,19 @@ while True :
     
     if predicted_color == "g":
        path = f"/?cmd=f(200)"
-       send_re_httpquest(host, port, path)
+       send_re_httpquest(host_bot, port, path)
        path = "/?cmd=s"
-       send_re_httpquest(host, port, path) 
+       send_re_httpquest(host_bot, port, path) 
     
     elif predicted_color == "r":
         path = f"/?cmd=s"
-        send_re_httpquest(host, port, path)
+        send_re_httpquest(host_bot, port, path)
         
     else:
         path = "/?cmd=f(200)"
-        send_re_httpquest(host, port, path)
+        send_re_httpquest(host_bot, port, path)
         path = "/?cmd=s"
-        send_re_httpquest(host, port, path)    
+        send_re_httpquest(host_bot, port, path)    
                
         
     time.sleep(1)          
