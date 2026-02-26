@@ -22,8 +22,7 @@ def send_re_httpquest(host, port, path):
     return None  # Return None if all retries fail
 
 # Example usage
-bot_num = input("Enter bot number : ")
-host="192.168."+bot_num+".10"
+host=input("Enter brain block ip address : ")
 port = 80
 right_ir_path = f"/?cmd=USLIR" 
 left_ir_path= f"/?cmd=USRIR"
