@@ -8,11 +8,9 @@ import numpy as np
 
 # Configuration
 
-bot_num = input("Enter bot number: ")
 speed = int(input("Enter speed limit between (150-250): "))
 stream_url = f'http://192.168.{bot_num}.14:81/stream'
-host_bot = f"192.168.{bot_num}.10"
-host = f"192.168.{bot_num}.10"
+host_bot_bot = input("Enter brain block ip address : ")
 port = 80
 us_path = "/?cmd=US"
 
@@ -73,12 +71,12 @@ def stream_video():
             continue
 
 # Function to send HTTP request with retries
-def send_request(host, port, path):
+def send_request(host_bot, port, path):
     retries = 10
     for _ in range(retries):
         conn = None
         try:
-            conn = http.client.HTTPConnection(host, port)
+            conn = http.client.HTTPConnection(host_bot, port)
             conn.request("GET", path)
             response = conn.getresponse()
             data = response.read().decode("utf-8")
@@ -95,35 +93,35 @@ def send_request(host, port, path):
 # Function to control the bot
 def control_bot():
     global running
-    requests.get(f"http://{host_bot}/?cmd=left_speed={speed}")
-    requests.get(f"http://{host_bot}/?cmd=right_speed={speed}")
+    requests.get(f"http://{host_bot_bot}/?cmd=left_speed={speed}")
+    requests.get(f"http://{host_bot_bot}/?cmd=right_speed={speed}")
     while running:  # Use global 'running' to control the loop
-        left_data = int(send_request(host, port, us_path))
+        left_data = int(send_request(host_bot, port, us_path))
         if left_data < 10:
-            send_request(host, port, "/?cmd=s")
-            requests.get(f"http://{host_bot}/?cmd=b(100)")
+            send_request(host_bot, port, "/?cmd=s")
+            requests.get(f"http://{host_bot_bot}/?cmd=b(100)")
         elif pygame.key.get_pressed()[pygame.K_UP]:
-            requests.get(f"http://{host_bot}/?cmd=f")
+            requests.get(f"http://{host_bot_bot}/?cmd=f")
             print("up")
         elif pygame.key.get_pressed()[pygame.K_DOWN]:
-            requests.get(f"http://{host_bot}/?cmd=b")
+            requests.get(f"http://{host_bot_bot}/?cmd=b")
             print("down")
         elif pygame.key.get_pressed()[pygame.K_LEFT]:
-            requests.get(f"http://{host_bot}/?cmd=l")
+            requests.get(f"http://{host_bot_bot}/?cmd=l")
             print("left")
         elif pygame.key.get_pressed()[pygame.K_RIGHT]:
-            requests.get(f"http://{host_bot}/?cmd=r")
+            requests.get(f"http://{host_bot_bot}/?cmd=r")
             print("right")
         elif pygame.key.get_pressed()[pygame.K_SPACE]:
-            requests.get(f"http://{host_bot}/?cmd=s")
+            requests.get(f"http://{host_bot_bot}/?cmd=s")
             print("stop")
         elif pygame.key.get_pressed()[pygame.K_ESCAPE]:
-            requests.get(f"http://{host_bot}/?cmd=s")
+            requests.get(f"http://{host_bot_bot}/?cmd=s")
             print("Exiting...")
             running = False
             break
         else:
-            requests.get(f"http://{host_bot}/?cmd=s")
+            requests.get(f"http://{host_bot_bot}/?cmd=s")
         time.sleep(0.1)  # Small delay to prevent overwhelming the CPU
 
 # Function to display instructions
