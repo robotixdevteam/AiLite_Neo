@@ -8,8 +8,7 @@ warnings.filterwarnings("ignore")
 # Initialize MediaPipe Face Mesh
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5)
-bot_num = input("Enter Bot Number:  ")
-host='192.168.' + bot_num + '.10'
+host=input("Enter brain block ip address : ")
 
 # Initialize OpenCV video capture
 cap = cv2.VideoCapture(0)
