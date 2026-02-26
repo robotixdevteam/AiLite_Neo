@@ -1,8 +1,8 @@
 import time
 import http.client
 
-bot_num = input("Enter bot number: ")
-host = "192.168." + bot_num + ".10"
+
+host = input("Enter brain block ip address : ")
 port = 80
 us_path = "/?cmd=USRIR"
 time.sleep(2)  # Wait for 5 seconds before the next iteration
