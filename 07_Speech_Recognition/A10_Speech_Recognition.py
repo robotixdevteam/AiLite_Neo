@@ -1,8 +1,8 @@
 import speech_recognition as sr
 import re
 import requests
-bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".10"
+
+host_bot=input("Enter brain block ip address : ")
 
 def get_ultrasonic_value():
     ultrasonic_url = f"http://192.168.{bot_num}.10/?cmd=US"
