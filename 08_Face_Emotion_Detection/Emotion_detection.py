@@ -35,10 +35,10 @@ def get_ultrasonic_value():
             return None
     return None 
 
-bot_num = input("Enter bot number : ")
-host="192.168."+bot_num+".10"
+
+host=input("Enter brain block ip address : ")
 port = 80
-host_bot="192.168."+bot_num+".10"
+
 # Load your trained model
 model = tf.keras.models.load_model('emotion_detection_model.h5')
  
