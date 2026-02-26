@@ -1,10 +1,9 @@
 import requests
 import keyboard
 
-bot_num = input("Enter bot number : ")
 print("Press and holdl the 'up' arrow key to trigger the GET request. Press 'ESC' to exit.")
 #bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".4"
+host_bot=input("Enter brain block ip address : ")
 while True:
     # Check if the 'up' arrow key is pressed
     if keyboard.is_pressed('up'):
