@@ -7,16 +7,6 @@ import tkinter as tk
 from tkinter import filedialog
 
 
-def get_ultrasonic_value():
-    ultrasonic_url = f"http://192.168.{bot_num}.10/?cmd=US"
-    response = requests.get(ultrasonic_url)
-    if response.status_code == 200:
-        try:
-            return int(response.text)
-        except ValueError:
-            return None
-    return None 
-
 def get_directory_path(name):
     root = tk.Tk()
     root.withdraw()  # Hide the main window
@@ -73,41 +63,38 @@ for name, dir_path in reference_images.items():
 # Action based on match result
 if match_found:
     if matching_name in ["Person_1", "Person_2"]:
-        bot_num = input("Enter Bot Number : ")
         print("Use arrow keys to control the bot. Press 'ESC' to exit.")
         
-        host_bot = "192.168."+bot_num+".10"
-        host="192.168."+bot_num+".10"
+        host = input("Enter brain block ip address : ")
         port = 80
 
         while True :        
             
-            ultrasonic_value = get_ultrasonic_value()
         
             if ultrasonic_value is not None and ultrasonic_value < 15:
                requests.get(f"http://{host}/?cmd=b(200)")
             
             elif keyboard.is_pressed('up'):
                 print("Forward")
-                requests.get(f"http://{host_bot}/?cmd=f")
+                requests.get(f"http://{host}/?cmd=f")
             elif keyboard.is_pressed('down'):
                 print("Backward")
-                requests.get(f"http://{host_bot}/?cmd=b") 
+                requests.get(f"http://{host}/?cmd=b") 
             elif keyboard.is_pressed('left'):
                 print("left") 
-                requests.get(f"http://{host_bot}/?cmd=l")
+                requests.get(f"http://{host}/?cmd=l")
             elif keyboard.is_pressed('right'):
                 print("right")
-                requests.get(f"http://{host_bot}/?cmd=r")
+                requests.get(f"http://{host}/?cmd=r")
             elif keyboard.is_pressed('space'):
                 print("stop")
-                requests.get(f"http://{host_bot}/?cmd=s")    
+                requests.get(f"http://{host}/?cmd=s")    
             elif keyboard.is_pressed('esc'):
                 print("Exiting...")
-                requests.get(f"http://{host_bot}/?cmd=s")
+                requests.get(f"http://{host}/?cmd=s")
                 break
             else:
-                requests.get(f"http://{host_bot}/?cmd=s") 
+                requests.get(f"http://{host}/?cmd=s") 
                 
 
     elif matching_name == "Person_3":
