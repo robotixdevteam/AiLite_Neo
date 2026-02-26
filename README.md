@@ -4,7 +4,7 @@
 
 
 <p align="center" width="80%">
-<img width="60%" src="AILITE IMAGE/AILITE IMAGE.jpg" />
+<img width="60%" src="Ailite_neo2.JPG" />
 </p>
 
  AILite is a cutting-edge autonomous robot designed for a wide range of applications. With its sophisticated four-wheel drive system, integrated camera, ultrasonic sensors, IR sensor, color sensor, and touch sensor, AILite is capable of navigating complex environments with precision and intelligence. This versatile bot is perfect for tasks requiring advanced obstacle detection, machine learning applications, and real-time monitoring, making it an ideal solution for both educational and industrial purposes.MIT App Inventor is used for the execution of the projects.
