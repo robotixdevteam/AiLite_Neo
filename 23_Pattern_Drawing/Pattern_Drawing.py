@@ -1,17 +1,16 @@
 import time
 import http.client
-bot_num = input("Enter bot number: ")
-host_bot = "192.168."+bot_num+".10"
-host="192.168."+bot_num+".10"
+
+host_bot_bot = input("Enter brain block ip address : ")
 port = 80
 
-def send_re_httpquest(host, port, path):
+def send_re_httpquest(host_bot, port, path):
     """Send HTTP request with retries."""
     retries = 10  # Number of retries
     for _ in range(retries):
         conn = None
         try:
-            conn = http.client.HTTPConnection(host, port)
+            conn = http.client.HTTPConnection(host_bot, port)
             conn.request("GET", path)
             response = conn.getresponse()
             data = response.read().decode("utf-8")
@@ -26,18 +25,18 @@ def send_re_httpquest(host, port, path):
     return None  # Return None if all retries fail
 
 path = f"/?cmd=l(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 path = f"/?cmd=f(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 path = f"/?cmd=l(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 path = f"/?cmd=f(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 path = f"/?cmd=l(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 path = f"/?cmd=f(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 path = f"/?cmd=l(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
 path = f"/?cmd=f(2000)"
-send_re_httpquest(host, port, path)
+send_re_httpquest(host_bot, port, path)
