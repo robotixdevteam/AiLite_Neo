@@ -1,6 +1,6 @@
 import requests
-bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".10"
+
+host_bot=input("Enter brain block ip address : ")
 
 while True:
     print("Forward - f | Backward - b | Left - l | Right - r")
