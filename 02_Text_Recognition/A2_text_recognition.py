@@ -5,8 +5,7 @@ import requests
 
 # Initialize the OCR reader
 reader = easyocr.Reader(['en'], gpu=False)
-bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".10"
+host_bot=input("Enter brain block ip address : ")
 # Function to send a string to the specified IP
 
 #async def send_string_to_ip(data_to_send):
