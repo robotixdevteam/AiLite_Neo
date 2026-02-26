@@ -70,11 +70,8 @@ if match_found:
 
         while True :        
             
-        
-            if ultrasonic_value is not None and ultrasonic_value < 15:
-               requests.get(f"http://{host}/?cmd=b(200)")
             
-            elif keyboard.is_pressed('up'):
+            if keyboard.is_pressed('up'):
                 print("Forward")
                 requests.get(f"http://{host}/?cmd=f")
             elif keyboard.is_pressed('down'):
