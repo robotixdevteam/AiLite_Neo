@@ -4,18 +4,8 @@ import cv2  # Install opencv-python
 import numpy as np
 import requests
 
-def get_ultrasonic_value():
-    ultrasonic_url = f"http://192.168.{bot_num}.10/?cmd=US"
-    response = requests.get(ultrasonic_url)
-    if response.status_code == 200:
-        try:
-            return int(response.text)
-        except ValueError:
-            return None
-    return None 
 
-bot_num = input("Enter bot number : ")
-host_bot="192.168."+bot_num+".10"
+host_bot=input("Enter brain block ip address : ")
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
 
@@ -30,7 +20,6 @@ camera = cv2.VideoCapture(0)
 
 while True:
     
-    ultrasonic_value = get_ultrasonic_value()
         
     if ultrasonic_value is not None and ultrasonic_value < 15:
         requests.get(f"http://{host_bot}/?cmd=b(200)")
