@@ -163,25 +163,25 @@ Once connected, you can start building your app by dragging and dropping compone
 - **aia file**:[WorkoutBuddy-Pedometer](https://github.com/robotixdevteam/AiLite/blob/MIT/Workout%20Buddy%20-%20Pedometer.aia)
 ### 24. Action Gen AI
 - **Objective**:Users can control Ailite Neo by giving commands such as move forward, move backward, and other actions, effectively providing it with a brain and sensor-based control system.
-- **aia file**:[Action Gen AI]
+- **aia file**:[Action Gen AI](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Action_Gen_AI.aia)
 ### 25. Characters
 - **Objective**: This features three characters—Owl, Crab, and Bat—each with a unique personality: Mentor, Teacher, and Friend. Users can interact with these characters to ask questions and engagingly learn STEM subjects.
-- **aia file**:[Characters]
+- **aia file**:[Characters](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Characters.aia)
 ### 26. Conversational ChatBots
 - **Objective**:Users can interact with the LLM through a chat interface, where the conversation history is saved for each session.
-- **aia file**:[Conversational ChatBot]
+- **aia file**:[Conversational ChatBot](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Conversational_chatbot.aia).
 ### 27. Conversational ChatBot KB
 - **Objective**: Users can upload their own knowledge base to the LLM and perform tasks such as question-and-answer sessions and summarization using their data.
-- **aia file**:[Conversational ChatBot KB]
+- **aia file**:[Conversational ChatBot KB](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Conversational_chatbot_KB.aia).
 ### 28. Shapes
 - **Objective**: This application has two modes. In the first mode, users can draw predefined shapes such as circles, squares, and triangles. In the second mode, users can draw shapes freely using button controls, and our AI model analyzes the drawing to identify the shape.
-- **aia file**:[Shapes]
+- **aia file**:[Shapes](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/shapes.aia).
 ### 29. Text Gen AI
 - **Objective**:In this program, users can enter their queries as text input and receive relevant text-based responses. We have used OpenAI as the large language model (LLM) to generate the outputs.
-- **aia file**:[Text Gen AI]
+- **aia file**:[Text Gen AI](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Text_Gen_AI.aia).
 ### 30. yes no neo 
 - **Objective**:Ailite Neo asks questions to the user and performs actions based on the user’s response. If the response is correct, it rotates its tail; if the response is incorrect, it rotates its head.
-- **aia file**:[yes no neo]
+- **aia file**:[yes no neo](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/yes_no_neo.aia).
   
 ## Types of construction
 ### 2-Wheel Construction
