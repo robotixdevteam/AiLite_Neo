@@ -7,22 +7,22 @@
 <img width="60%" src="Ailite_neo2.JPG" />
 </p>
 
- AILite is a cutting-edge autonomous robot designed for a wide range of applications. With its sophisticated four-wheel drive system, integrated camera, ultrasonic sensors, IR sensor, color sensor, and touch sensor, AILite is capable of navigating complex environments with precision and intelligence. This versatile bot is perfect for tasks requiring advanced obstacle detection, machine learning applications, and real-time monitoring, making it an ideal solution for both educational and industrial purposes.MIT App Inventor is used for the execution of the projects.
+ AILite Neo is a cutting-edge autonomous robot designed for a wide range of applications. With its sophisticated four-wheel drive system, integrated camera, ultrasonic sensors, IR sensor, color sensor, and touch sensor, AILite is capable of navigating complex environments with precision and intelligence. This versatile bot is perfect for tasks requiring advanced obstacle detection, machine learning applications, and real-time monitoring, making it an ideal solution for both educational and industrial purposes.MIT App Inventor is used for the execution of the projects.
 
 ## Get the Source Code
 You can download the repository as a [zip file](https://github.com/marreddyanuhya/AILITE-MIT-APPLICATIONS/archive/refs/heads/main.zip) and extract it into a folder of your choice.
 
 ## Setting up the Local Connection
 Enable Wi-Fi on your laptop, Pc or Mobile phone.
-Turn on the AILite bot, which functions as a hotspot. 
+Turn on the AILite Neo bot, which functions as a hotspot. 
 
 ### Connect to the network by entering the following details:
   -Wi-Fi Name: AILITE-<unique-ID> (e.g., AILITE-1069)
   
   -Wi-Fi Password: 123456789
 
-## Accessing the Unique URL for each AILite Bot:
-Open a web browser and enter the following URL to access the AILite bot:
+## Accessing the Unique URL for each AILite Neo Bot:
+Open a web browser and enter the following URL to access the AILite Neo bot:
 
 URL format: 192.168.{bot_number}.10
 Example: For AILITE-1069, the last two digits (69) are inverted to form the bot number (96), so the URL would be:
@@ -119,7 +119,7 @@ Once connected, you can start building your app by dragging and dropping compone
 -**Sensor**: Phone Camera - Text Recognition
 - **aia file**:[OCR App](https://github.com/robotixdevteam/AiLite/blob/MIT/Ocr%20App.aia)
 ### 13.	Orientation Sensor-Compass
-- **Objective**: This uses compass directions to guide AiLite in performing specific actions based on its orientation.
+- **Objective**: This uses compass directions to guide AiLite Neo in performing specific actions based on its orientation.
 - **Sensor**: Phone Accelerometer
 - **aia file**:[Orientation Sensor](https://github.com/robotixdevteam/AiLite/blob/MIT/Orientation%20Sensor%20-%20Compass.aia)
 ### 14.	Remote Surviellance
@@ -127,19 +127,19 @@ Once connected, you can start building your app by dragging and dropping compone
 - **Sensor**: Bot Camera
 - **aia file**:[Remote Surviellance](https://github.com/robotixdevteam/AiLite/blob/MIT/Remote%20Surviellance.aia)
 ### 15.	Specs Recognition
-- **Objective**: AILite  recognizes the specs and do some actions by using Teachable Machines.
+- **Objective**: AILite Neo recognizes the specs and do some actions by using Teachable Machines.
 - **Sensor**: Phone Camera - Machine Learning
 - **aia file**:[Specs Recognition](https://github.com/robotixdevteam/AiLite/blob/MIT/Specs%20Recognition.aia)
 ### 16.	Speech control AILite-L1 (Level 1)
-- **Objective**: In Speech Control, users can prompt AILite to "start moving" to initiate motion and "stop moving" to halt it, facilitating seamless interaction.
+- **Objective**: In Speech Control, users can prompt AILite Neo to "start moving" to initiate motion and "stop moving" to halt it, facilitating seamless interaction.
 - **Sensor**: Phone's Mic
 - **aia file**:[Speech control AILite-L1](https://github.com/robotixdevteam/AiLite/blob/MIT/Speech%20Control%20AI%20Lite%20-%20L1.aia)
 ### 17.	Speech control AILite-L2 (Level 2)
-- **Objective**:	The user gives voice commands like "move forward," "move backward," and more, which AiLite processes to perform the corresponding actions.
+- **Objective**:	The user gives voice commands like "move forward," "move backward," and more, which AiLite Neo processes to perform the corresponding actions.
 - **Sensor**: Phone's Mic
 - **aia file**:[Speech control AILite-L2](https://github.com/robotixdevteam/AiLite/blob/MIT/Speech%20Control%20AI%20Lite%20-%20L2.aia)
 ### 18.	Speed Control Ailite
-- **Objective**:AILite adjusts between low, medium, and high speeds through button controls.
+- **Objective**:AILite Neo adjusts between low, medium, and high speeds through button controls.
 - **aia file**:[Speed Control Ailite](https://github.com/robotixdevteam/AiLite/blob/MIT/Speed_Control.aia)
 ### 19. Swipe 	Gesture Control
 - **Objective**:	It utilizes swipe gestures for movement control.
@@ -150,7 +150,7 @@ Once connected, you can start building your app by dragging and dropping compone
 - **Sensor**: Phone Accelerometer
 - **aia file**:[Tilt Control AILite-L1](https://github.com/robotixdevteam/AiLite/blob/MIT/Tilt%20Control%20AI%20Lite%20-%20L1.aia)
 ### 21.	Tilt control AILite-L2 (Level 2)
-- **Objective**:The user tilts the device forward for forward movement, backward for backward movement, and more, AILite implements the actions accordingly.
+- **Objective**:The user tilts the device forward for forward movement, backward for backward movement, and more, AILite neo implements the actions accordingly.
 - **Sensor**: Phone Accelerometer
 - **aia file**:[Tilt control AILite-L2](https://github.com/robotixdevteam/AiLite/blob/MIT/Tilt%20Control%20AI%20Lite%20-%20L2.aia)
 ### 22.	Traffic sign Detection
@@ -158,7 +158,7 @@ Once connected, you can start building your app by dragging and dropping compone
 - **Sensor**: Phone Camera - Machine Learning
 - **aia file**:[Traffic sign Detection](https://github.com/robotixdevteam/AiLite/blob/MIT/Traffic%20Sign%20Detection.aia)
 ### 23.	WorkoutBuddy-Pedometer
-- **Objective**: The pedometer feature enables AILite to follow the user's walking motion; when the user starts walking, AILite initiates movement, and when the user stops, AILite halts as well. Additionally, it tracks the number of steps taken, distance covered, and elapsed time during the activity.
+- **Objective**: The pedometer feature enables AILite neo to follow the user's walking motion; when the user starts walking, AILite neo initiates movement, and when the user stops, AILite neo halts as well. Additionally, it tracks the number of steps taken, distance covered, and elapsed time during the activity.
 - **Sensor**: Phone Accelerometer
 - **aia file**:[WorkoutBuddy-Pedometer](https://github.com/robotixdevteam/AiLite/blob/MIT/Workout%20Buddy%20-%20Pedometer.aia)
 ### 24. Action Gen AI
@@ -186,7 +186,7 @@ Once connected, you can start building your app by dragging and dropping compone
 ## Types of construction
 ### 2-Wheel Construction
 
-The 2-wheel construction is a popular and widely used design in AILite projects. It is favored for its simplicity, agility, and versatility, making it suitable for a broad range of applications. This design features two wheels driven by motors, allowing for straightforward movement and maneuverability. The 2-wheel version is especially well-suited for projects that require quick directional changes, precise navigation, and efficient use of space.
+The 2-wheel construction is a popular and widely used design in AILite Neo projects. It is favored for its simplicity, agility, and versatility, making it suitable for a broad range of applications. This design features two wheels driven by motors, allowing for straightforward movement and maneuverability. The 2-wheel version is especially well-suited for projects that require quick directional changes, precise navigation, and efficient use of space.
 
 Key Features:
 Versatility: The 2-wheel construction can be applied to a wide variety of projects, ranging from basic robotics to more complex automation tasks.
@@ -195,16 +195,16 @@ Simplicity: The design is simple, making it easier to build, maintain, and modif
 
 ### 4-Wheel Construction
 
-The 4-wheel construction in AILite provides a more stable and robust platform, which is particularly advisable for projects involving color sensors and other sensor-based applications. While the same projects that can be performed with the 2-wheel version can also be executed with the 4-wheel version, the latter offers added stability and support, which is crucial for certain types of sensor-based tasks.
+The 4-wheel construction in AILite Neo provides a more stable and robust platform, which is particularly advisable for projects involving color sensors and other sensor-based applications. While the same projects that can be performed with the 2-wheel version can also be executed with the 4-wheel version, the latter offers added stability and support, which is crucial for certain types of sensor-based tasks.
 
 Key Features:
 Stability: The 4-wheel design offers greater stability, reducing the risk of tipping or imbalance, especially when navigating uneven terrain or carrying additional sensors and equipment.
 Enhanced Sensor Performance: For color sensor-based projects, the 4-wheel construction provides a steadier platform, ensuring more accurate sensor readings and reliable performance.
 Adaptability: Although more complex than the 2-wheel version, the 4-wheel construction can handle the same range of projects, with the added benefit of increased stability and sensor integration.
 
-## Various Execution Options for AILite
+## Various Execution Options for AILite Neo
 
-In addition to MIT App Inventor, AILite projects can also be developed using Python, a powerful and user-friendly platform for creating mobile applications. MIT App Inventor allows users to design and implement projects through a visual programming interface, making it accessible to those who may not be familiar with traditional coding. Kindly refer the following link for more information.
+In addition to MIT App Inventor, AILite Neo projects can also be developed using Python, a powerful and user-friendly platform for creating mobile applications. MIT App Inventor allows users to design and implement projects through a visual programming interface, making it accessible to those who may not be familiar with traditional coding. Kindly refer the following link for more information.
 
 
 ## Contact
