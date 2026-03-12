@@ -5,35 +5,50 @@
 
 AILite is a cutting-edge autonomous robot designed for a wide range of applications. With its sophisticated four-wheel drive system, integrated camera, ultrasonic sensors, IR sensor, color sensor, and touch sensor, AILite is capable of navigating complex environments with precision and intelligence. 
 
-## Get the source code
-
-- You can download the repository as a [zip file](https://github.com/robotixdevteam/AiLite/archive/refs/heads/Python.zip) and extract it into a folder of your choice.
-- You can clone the AiLite repository from GitHub with the following command:f
-
-    ```bash
-    git clone https://github.com/robotixdevteam/AiLIte_python_projects.git
-    ```
- 
-
 # Connection
 
 ## How to Set up the Local Connection:
 
 1. First, turn on wifi in Laptop/PC.
 
-2. Turn on the AiLite bot, that acts as the hotspot. Establish connection by entering the `WiFi-Name = 'AILITE-<unique-ID>' (for example, 'AILITE-1034')` and `Wifi-Password = '123456789'`.
+2. Ailite neo hub connection  :
 
-3. Accessing Unique URL for each AiLite Bot:
+Turn on the AiLite Neo bot, that acts as the hotspot. Establish connection by entering the `WiFi-Name = 'AILITE-<unique-ID>' (for example, 'AILITE-1034')` and `Wifi-Password = '12345678'`.
+
+Accessing Unique URL for each AiLite Neo Bot:
 
 - In web browser kindly enter the below url for accessing AiLite bot in web url.
 
         
         192.168.{bot_number}.10
         
-  -For example 'AILITE-0134' here inverse of last two number is the bot number
+  -For example 'AILITE-0134' here inverse of last four number is the bot number
 
         
         192.168.43.10
+
+  -Then in the url we will get an webpage where we need to enter our wifi crediantials details (Wifi name & Password). Make sure we have a wifi connection with internet or we can use mobile hotspot with internet. Wifi connection with 5G is not preffered.
+
+  -After entering the wifi crediantials , once it is successfully connected we will get Ailite neo hub host url .(For example : 162.189.12.10) make sure to copy this url which will be used in program.
+
+3. Ailite neo camera connection  : Same as the hub connection.
+
+Turn on the AiLite Neo camera, that acts as the hotspot. Establish connection by entering the `WiFi-Name = 'Camera-<unique-ID>' (for example, 'Camera-1034')` and `Wifi-Password = '12345678'`.
+
+Accessing Unique URL for each AiLite Neo camera:
+
+- In web browser kindly enter the below url for accessing AiLite camera in web url
+
+        192.168.{bot_number}.10
+        
+  -For example 'Camera-0134' here inverse of last four number is the bot number
+
+        
+        192.168.43.10
+
+  -Then in the url we will get an webpage where we need to enter our wifi crediantials details (Wifi name & Password). Make sure we have a wifi connection with internet or we can use mobile hotspot    with internet. Wifi connection with 5G is not preffered.
+
+  -After entering the wifi crediantials , once it is successfully connected we will get Ailite neo camera host url(For example : 162.189.12.10) make sure to copy this url which will be used in program .
         
 
 ## You first need to setup your environment.
