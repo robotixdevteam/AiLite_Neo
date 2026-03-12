@@ -9,9 +9,12 @@ AILite is a cutting-edge autonomous robot designed for a wide range of applicati
 
 ## How to Set up the Local Connection:
 
-1. First, turn on wifi in Laptop/PC.
 
-2. Ailite neo hub connection  :
+
+# 1. First, turn on wifi in Laptop/PC.
+   Make sure to have wifi enabled laptop/pc
+
+# 2. Ailite neo hub connection  :
 
 Turn on the AiLite Neo bot, that acts as the hotspot. Establish connection by entering the `WiFi-Name = 'AILITE-<unique-ID>' (for example, 'AILITE-1034')` and `Wifi-Password = '12345678'`.
 
@@ -27,11 +30,13 @@ Accessing Unique URL for each AiLite Neo Bot:
         
         192.168.43.10
 
-  -Then in the url we will get an webpage where we need to enter our wifi crediantials details (Wifi name & Password). Make sure we have a wifi connection with internet or we can use mobile hotspot with internet. Wifi connection with 5G is not preffered.
+  -Then in the url we will get an webpage where we need to enter our wifi crediantials details (Wifi name & Password).
+   Make sure we have a wifi connection with internet or we can use mobile hotspot with internet.
+   Wifi connection with 5G is not preffered.
 
-  -After entering the wifi crediantials , once it is successfully connected we will get Ailite neo hub host url .(For example : 162.189.12.10) make sure to copy this url which will be used in program.
+  -After entering the wifi crediantials , once it is successfully connected we will get Ailite neo hub host url .(For example : 162.189.12.10) make sure to copy this url which will be used    in program.
 
-3. Ailite neo camera connection  : Same as the hub connection.
+# 3. Ailite neo camera connection  : Same as the hub connection.
 
 Turn on the AiLite Neo camera, that acts as the hotspot. Establish connection by entering the `WiFi-Name = 'Camera-<unique-ID>' (for example, 'Camera-1034')` and `Wifi-Password = '12345678'`.
 
@@ -49,6 +54,18 @@ Accessing Unique URL for each AiLite Neo camera:
   -Then in the url we will get an webpage where we need to enter our wifi crediantials details (Wifi name & Password). Make sure we have a wifi connection with internet or we can use mobile hotspot    with internet. Wifi connection with 5G is not preffered.
 
   -After entering the wifi crediantials , once it is successfully connected we will get Ailite neo camera host url(For example : 162.189.12.10) make sure to copy this url which will be used in program .
+
+# 4. Final Setup
+
+Once both the **AILite Neo Hub** and **AILite Neo Camera** are connected to the same WiFi network:
+
+1. Disconnect from the temporary hotspot.
+2. Connect your laptop/PC to the **same WiFi network** used for the robot and camera.
+3. You are now ready to start working with the **AILite Neo system**.
+
+---
+
+✅ Your **AILite robot is now ready for operation.**
         
 
 ## You first need to setup your environment.
