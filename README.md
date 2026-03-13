@@ -13,20 +13,59 @@
 You can download the repository as a [zip file](https://github.com/marreddyanuhya/AILITE-MIT-APPLICATIONS/archive/refs/heads/main.zip) and extract it into a folder of your choice.
 
 ## Setting up the Local Connection
-Enable Wi-Fi on your laptop, Pc or Mobile phone.
-Turn on the AILite Neo bot, which functions as a hotspot. 
+#  First, turn on wifi in Laptop/PC.
+   Make sure to have wifi enabled laptop/pc
 
-### Connect to the network by entering the following details:
-  -Wi-Fi Name: AILITE-<unique-ID> (e.g., AILITE-1069)
-  
-  -Wi-Fi Password: 123456789
+#  Ailite neo hub connection  :
 
-## Accessing the Unique URL for each AILite Neo Bot:
-Open a web browser and enter the following URL to access the AILite Neo bot:
+Turn on the AiLite Neo bot, that acts as the hotspot. Establish connection by entering the `WiFi-Name = 'AILITE-<unique-ID>' (for example, 'AILITE-1034')` and `Wifi-Password = '12345678'`.
 
-URL format: 192.168.{bot_number}.10
-Example: For AILITE-1069, the last two digits (69) are inverted to form the bot number (96), so the URL would be:
-192.168.96.10
+Accessing Unique URL for each AiLite Neo Bot:
+
+- In web browser kindly enter the below url for accessing AiLite bot in web url.
+
+        
+        192.168.{bot_number}.10
+        
+  -For example 'AILITE-0134' here inverse of last four number is the bot number
+
+        
+        192.168.43.10
+
+  -Then in the url we will get an webpage where we need to enter our wifi crediantials details (Wifi name & Password).
+   Make sure we have a wifi connection with internet or we can use mobile hotspot with internet.
+   Wifi connection with 5G is not preffered.
+
+  -After entering the wifi crediantials , once it is successfully connected we will get Ailite neo hub host url .(For example : 162.189.12.10) make sure to copy this url which will be used    in program.
+
+#  Ailite neo camera connection  : Same as the hub connection.
+
+Turn on the AiLite Neo camera, that acts as the hotspot. Establish connection by entering the `WiFi-Name = 'Camera-<unique-ID>' (for example, 'Camera-1034')` and `Wifi-Password = '12345678'`.
+
+Accessing Unique URL for each AiLite Neo camera:
+
+- In web browser kindly enter the below url for accessing AiLite camera in web url
+
+        192.168.{bot_number}.10
+        
+  -For example 'Camera-0134' here inverse of last four number is the bot number
+
+        
+        192.168.43.10
+
+  -Then in the url we will get an webpage where we need to enter our wifi crediantials details (Wifi name & Password). Make sure we have a wifi connection with internet or we can use mobile hotspot    with internet. Wifi connection with 5G is not preffered.
+
+  -After entering the wifi crediantials , once it is successfully connected we will get Ailite neo camera host url(For example : 162.189.12.10) make sure to copy this url which will be used in program .
+
+#  Final Setup
+
+Once both the **AILite Neo Hub** and **AILite Neo Camera** are connected to the same WiFi network:
+
+1. Disconnect from the temporary hotspot.
+2. Connect your laptop/PC to the **same WiFi network** used for the robot and camera.
+3. You are now ready to start working with the **AILite Neo system**.
+
+---
 
 ## Table of Contents
 -[MIT App Inventor Installation](#MIT-App-Inventor-Installation)
@@ -73,115 +112,115 @@ Once connected, you can start building your app by dragging and dropping compone
 ### 1. Artist AILite
 - **Objective**:The Artist AILite feature enables the system to recognize shapes such as straight lines or alphabets drawn by the user, and then replicate those shapes.
 - **Sensor**: Phone Camera-Machine Learning
-- **aia file**: [Artist AILite](https://github.com/robotixdevteam/AiLite/blob/MIT/Artist%20AI%20Lite.aia)
+
 ### 2. Button control-L1(Level 1)
 - **Objective**: In the button control feature, clicking the Start Button activates forward motor movement, while clicking the Stop Button halts motor operation.
-- **aia file**:[Button control-L1(Level 1)](https://github.com/robotixdevteam/AiLite/blob/MIT/Button%20Control%20-%20L1.aia)
+
 
 ### 3. Button control-L2 (Level 2)
 - **Objective**:	It Use buttons to control AiLite's movements.
-- **aia file**:[Button control-L2 (Level 2))](https://github.com/robotixdevteam/AiLite/blob/MIT/Button%20Control%20-%20L2.aia)
+
 ### 4. Chatbot 
 - **Objective**: It performs operations based on yes/no questions, providing responses accordingly.
 - **Sensor**: Phone's Mic - Text to Speech & Speech Recognition
-- **aia file**:[Chatbot](https://github.com/robotixdevteam/AiLite/blob/MIT/Chat%20Bot%20AI%20Lite.aia)
+
 ### 5. Emotion Recognition-L1	
 - **Objective**: The emotion recognition feature detects whether the user is happy or angry. If the user is happy, AILite initiates a dance, whereas if the user is angry, AILite moves away from the user.
 - **Sensor**: Phone Camera - Machine Learning
-- **aia file**:[Emotion Recognition-L1](https://github.com/robotixdevteam/AiLite/blob/MIT/Emotion%20Recognition.aia)
+
 
 ### 6. Face detection
 - **Objective**:By using Personal Image Classifier it enables AILite to dance when a face is detected through camera, and spin around when no face is detected.
 - **Sensor**: Phone Camera - Machine Learning
-- **aia file**:[Face detection](https://github.com/robotixdevteam/AiLite/blob/MIT/Face%20Detection.aia)
+
 ### 7.	Face Recognition-Hi user
 - **Objective**:	AILite detects its user and say "Hi User" and do some actions, if not its user it say "you are not my user" and go away.
 - **Sensor**: Phone Camera - Machine Learning
-- **aia file**:[Face Recognition-Hi user](https://github.com/robotixdevteam/AiLite/blob/MIT/Face%20Recognition%20-%20Hi%20User.aia)
+
 ### 8.	Hand Gestures 
 - **Objective**: Open and close hand	By recognizing hand gestures, AiLite performs predefined actions, using personal image classifier
 - **Sensor**: Phone Camera - Machine Learning**
-- **aia file**:[Hand Gestures](https://github.com/robotixdevteam/AiLite/blob/MIT/Hand%20Gestures.aia)
+
 ### 9.	Light sensor control
 - **Objective**: This makes the bot move forward in the presence of light and halt when there is no light.
 - **Sensor**: Phone LDR Sensor
-- **aia file**:[Light sensor control](https://github.com/robotixdevteam/AiLite/blob/MIT/Light%20Sensor%20AI%20Lite.aia)
+
 ### 10.	Object Follower-US
 - **Objective**: It uses Ultrasonic sensor to detect the objects and follows the Object.
 - **Sensor**: Bot's Ultrasonic Sensor
-- **aia file**:[Object Follower-US](https://github.com/robotixdevteam/AiLite/blob/MIT/Object%20Follower%20-%20US.aia)
+
 ### 11.	Obstacle Avoider-IR
 - **Objective**: It Include TTS(Test to Speech) It uses IR sensor values to detect and avoid obstacles in front of it, and informs the user if an obstacle is present.
 - **Sensor**: Bot's IR Sensor
-- **aia file**:[Obstacle Avoider-IR](https://github.com/robotixdevteam/AiLite/blob/MIT/Obstacle%20Avoider-IR.aia)
+
 ### 12.	OCR App
 - **Objective**: Speed control	It Recognizes characters and adjust the speed of AILite accordingly.
 -**Sensor**: Phone Camera - Text Recognition
-- **aia file**:[OCR App](https://github.com/robotixdevteam/AiLite/blob/MIT/Ocr%20App.aia)
+
 ### 13.	Orientation Sensor-Compass
 - **Objective**: This uses compass directions to guide AiLite Neo in performing specific actions based on its orientation.
 - **Sensor**: Phone Accelerometer
-- **aia file**:[Orientation Sensor](https://github.com/robotixdevteam/AiLite/blob/MIT/Orientation%20Sensor%20-%20Compass.aia)
+
 ### 14.	Remote Surviellance
 - **Objective**: The user initiates remote surveillance using buttons for "forward," "backward," "left," and "right." The ESP32 camera streams the footage, enabling control of the bot's movements forward and backward.
 - **Sensor**: Bot Camera
-- **aia file**:[Remote Surviellance](https://github.com/robotixdevteam/AiLite/blob/MIT/Remote%20Surviellance.aia)
+
 ### 15.	Specs Recognition
 - **Objective**: AILite Neo recognizes the specs and do some actions by using Teachable Machines.
 - **Sensor**: Phone Camera - Machine Learning
-- **aia file**:[Specs Recognition](https://github.com/robotixdevteam/AiLite/blob/MIT/Specs%20Recognition.aia)
+
 ### 16.	Speech control AILite-L1 (Level 1)
 - **Objective**: In Speech Control, users can prompt AILite Neo to "start moving" to initiate motion and "stop moving" to halt it, facilitating seamless interaction.
 - **Sensor**: Phone's Mic
-- **aia file**:[Speech control AILite-L1](https://github.com/robotixdevteam/AiLite/blob/MIT/Speech%20Control%20AI%20Lite%20-%20L1.aia)
+
 ### 17.	Speech control AILite-L2 (Level 2)
 - **Objective**:	The user gives voice commands like "move forward," "move backward," and more, which AiLite Neo processes to perform the corresponding actions.
 - **Sensor**: Phone's Mic
-- **aia file**:[Speech control AILite-L2](https://github.com/robotixdevteam/AiLite/blob/MIT/Speech%20Control%20AI%20Lite%20-%20L2.aia)
+
 ### 18.	Speed Control Ailite
 - **Objective**:AILite Neo adjusts between low, medium, and high speeds through button controls.
-- **aia file**:[Speed Control Ailite](https://github.com/robotixdevteam/AiLite/blob/MIT/Speed_Control.aia)
+
 ### 19. Swipe 	Gesture Control
 - **Objective**:	It utilizes swipe gestures for movement control.
 - **Sensor**: Phone's Touch Control
-- **aia file**:[Gesture Control](https://github.com/robotixdevteam/AiLite/blob/MIT/Swipe%20Gesture%20Control.aia)
+
 ### 20.	Tilt Control AILite-L1 (Level 1)
 - **Objective**: This enables the bot to turn left when the phone is tilted left and turn right when the phone is tilted right.
 - **Sensor**: Phone Accelerometer
-- **aia file**:[Tilt Control AILite-L1](https://github.com/robotixdevteam/AiLite/blob/MIT/Tilt%20Control%20AI%20Lite%20-%20L1.aia)
+
 ### 21.	Tilt control AILite-L2 (Level 2)
 - **Objective**:The user tilts the device forward for forward movement, backward for backward movement, and more, AILite neo implements the actions accordingly.
 - **Sensor**: Phone Accelerometer
-- **aia file**:[Tilt control AILite-L2](https://github.com/robotixdevteam/AiLite/blob/MIT/Tilt%20Control%20AI%20Lite%20-%20L2.aia)
+
 ### 22.	Traffic sign Detection
 - **Objective**: Using personal Image classifier, AiLite adjusts its movements based on recognized traffic signs.
 - **Sensor**: Phone Camera - Machine Learning
-- **aia file**:[Traffic sign Detection](https://github.com/robotixdevteam/AiLite/blob/MIT/Traffic%20Sign%20Detection.aia)
+
 ### 23.	WorkoutBuddy-Pedometer
 - **Objective**: The pedometer feature enables AILite neo to follow the user's walking motion; when the user starts walking, AILite neo initiates movement, and when the user stops, AILite neo halts as well. Additionally, it tracks the number of steps taken, distance covered, and elapsed time during the activity.
 - **Sensor**: Phone Accelerometer
-- **aia file**:[WorkoutBuddy-Pedometer](https://github.com/robotixdevteam/AiLite/blob/MIT/Workout%20Buddy%20-%20Pedometer.aia)
+
 ### 24. Action Gen AI
 - **Objective**:Users can control Ailite Neo by giving commands such as move forward, move backward, and other actions, effectively providing it with a brain and sensor-based control system.
-- **aia file**:[Action Gen AI](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Action_Gen_AI.aia)
+
 ### 25. Characters
 - **Objective**: This features three characters—Owl, Crab, and Bat—each with a unique personality: Mentor, Teacher, and Friend. Users can interact with these characters to ask questions and engagingly learn STEM subjects.
-- **aia file**:[Characters](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Characters.aia)
+
 ### 26. Conversational ChatBots
 - **Objective**:Users can interact with the LLM through a chat interface, where the conversation history is saved for each session.
-- **aia file**:[Conversational ChatBot](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Conversational_chatbot.aia).
+
 ### 27. Conversational ChatBot KB
 - **Objective**: Users can upload their own knowledge base to the LLM and perform tasks such as question-and-answer sessions and summarization using their data.
-- **aia file**:[Conversational ChatBot KB](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Conversational_chatbot_KB.aia).
+
 ### 28. Shapes
 - **Objective**: This application has two modes. In the first mode, users can draw predefined shapes such as circles, squares, and triangles. In the second mode, users can draw shapes freely using button controls, and our AI model analyzes the drawing to identify the shape.
-- **aia file**:[Shapes](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/shapes.aia).
+
 ### 29. Text Gen AI
 - **Objective**:In this program, users can enter their queries as text input and receive relevant text-based responses. We have used OpenAI as the large language model (LLM) to generate the outputs.
-- **aia file**:[Text Gen AI](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/Text_Gen_AI.aia).
+
 ### 30. yes no neo 
 - **Objective**:Ailite Neo asks questions to the user and performs actions based on the user’s response. If the response is correct, it rotates its tail; if the response is incorrect, it rotates its head.
-- **aia file**:[yes no neo](https://github.com/robotixdevteam/AiLite_Neo/blob/MIT/yes_no_neo.aia).
+
   
 ## Types of construction
 ### 2-Wheel Construction
